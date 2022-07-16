@@ -1,5 +1,5 @@
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+require('dotenv').config({ path: path.resolve(__dirname, '.env') });
 
 const PREFIX = 'dj';
 const BOT_INVITE_LINK = process.env.BOT_INVITE_LINK;
