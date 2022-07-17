@@ -26,7 +26,8 @@ module.exports = class HelpCommand extends Commando.Command {
         { name: `djnamir 🐅`, value: 'Play "Wa namir *amel".', inline: true },
         { name: `djping 🏓`, value: 'Show your ping.', inline: true },
         { name: `djspawn 🙋‍♂️`, value: 'Spawn your friends.', inline: true },
-        { name: `djurban 📚 <word>`, value: 'Search for in dictionnary.', inline: true },
+        { name: `djurban 📚 <word>`, value: 'Search in the urban dictionnary.', inline: true },
+        { name: `djweather 🌡 <ciry>`, value: 'Weather for the given city', inline: true },
       )
       .setFooter('Keep vibing 🎶🎵');
 
