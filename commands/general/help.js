@@ -15,7 +15,6 @@ module.exports = class HelpCommand extends Commando.Command {
     const embed = new Discord.MessageEmbed()
       .setColor('RANDOM')
       .setTitle('DJ Hmida ♫♪ Command List')
-      .setThumbnail(BOT_AVATAR_IMG)
       .addFields(
         { name: `djadvice 🐢`, value: "Get Oogway's wisdom.", inline: true },
         { name: `djanime 😳 <anime>`, value: 'Search for anime.', inline: true },
