@@ -1,6 +1,5 @@
 const Commando = require('discord.js-commando');
 const path = require('path');
-const server = require('express')();
 
 const { OWNER_ID, BOT_TOKEN, PREFIX, BOT_INVITE_LINK } = require('./constants');
 
@@ -23,7 +22,4 @@ client.on('ready', () => {
   }
 });
 
-const PORT = process.env.PORT || 8080;
-server.listen(PORT, () => {
-  client.login(BOT_TOKEN);
-});
+client.login(BOT_TOKEN);
