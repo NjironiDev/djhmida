@@ -18,6 +18,7 @@ module.exports = class HelpCommand extends Commando.Command {
       .addFields(
         { name: `djadvice 🐢`, value: "Get Oogway's wisdom.", inline: true },
         { name: `djanime 😳 <anime>`, value: 'Search for anime.', inline: true },
+        { name: `djbbquote ⚗`, value: 'Breaking Bad quote.', inline: true },
         { name: `djcat 🐱`, value: 'Random cute cat.', inline: true },
         { name: `djface 👩`, value: 'Random face.', inline: true },
         { name: `djhelp 🆘`, value: 'Show help.', inline: true },
