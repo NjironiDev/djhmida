@@ -24,10 +24,11 @@ module.exports = class HelpCommand extends Commando.Command {
         { name: `djhelp 🆘`, value: 'Show help.', inline: true },
         { name: `djmeme 🌈`, value: 'Random meme.', inline: true },
         { name: `djnamir 🐅`, value: 'Play "Wa namir *amel".', inline: true },
+        { name: `djhehe 😏`, value: 'Play "Hehe".', inline: true },
         { name: `djping 🏓`, value: 'Show your ping.', inline: true },
         { name: `djspawn 🙋‍♂️`, value: 'Spawn your friends.', inline: true },
         { name: `djurban 📚 <word>`, value: 'Search in the urban dictionnary.', inline: true },
-        { name: `djweather 🌡 <ciry>`, value: 'Weather for the given city', inline: true },
+        { name: `djweather 🌡 <city>`, value: 'Weather for the given city', inline: true },
       )
       .setFooter('Keep vibing 🎶🎵');
 

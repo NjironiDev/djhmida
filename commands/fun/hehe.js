@@ -1,12 +1,12 @@
 const Commando = require('discord.js-commando');
 
-module.exports = class NamirCommand extends Commando.Command {
+module.exports = class HeheCommand extends Commando.Command {
   constructor(client) {
     super(client, {
-      name: 'namir',
+      name: 'hehe',
       group: 'fun',
-      memberName: 'namir',
-      description: 'Plays "wa namir *amel"',
+      memberName: 'hehe',
+      description: 'Plays hehe"',
     });
   }
 
@@ -18,7 +18,7 @@ module.exports = class NamirCommand extends Commando.Command {
     try {
       const connection = await voice.channel.join();
 
-      connection.play('https://cdn.discordapp.com/attachments/849299865157632098/891398001510219777/namir.mp3');
+      connection.play('https://cdn.discordapp.com/attachments/1005814495987388459/1010155223794327562/namir-hehe.mp3');
     } catch (error) {
       console.log(error);
       voice.channel.leave();
