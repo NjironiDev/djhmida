@@ -1,6 +1,8 @@
 const Commando = require("discord.js-commando");
 
 const voices = {
+  wach_kayn:
+    "https://cdn.discordapp.com/attachments/1008058197141106699/1011749023989911612/Wach_kayn.mp3",
   zamel:
     "https://cdn.discordapp.com/attachments/849299865157632098/891398001510219777/namir.mp3",
   da7kek:
@@ -42,7 +44,7 @@ module.exports = class NamirCommand extends Commando.Command {
 
     if (!Object.keys(voices).includes(option))
       return message.reply(
-        "Option does not exist, use the given options `djnamir zamel|da7kek|rak3yan|aller|li_ma3na|salam|wooo|wach_kay,`"
+        "Option does not exist, use the given options `djnamir zamel|da7kek|rak3yan|aller|li_ma3na|salam|wooo|wach_kayn`"
       );
 
     try {
