@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 
-export const majidVoices = {
+const majidVoices = {
   dik_terma: 'https://cdn.discordapp.com/attachments/596120108334579728/1012813871267991632/Dik_Terma.mp3',
   hak_a_said: 'https://cdn.discordapp.com/attachments/596120108334579728/1012813872266231888/Hak_a_Said.mp3',
   hak_chwa: 'https://cdn.discordapp.com/attachments/596120108334579728/1012813872635326504/Hak_Chwa.mp3',

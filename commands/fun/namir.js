@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 
-export const namirVoices = {
+const namirVoices = {
   wach_kayn: 'https://cdn.discordapp.com/attachments/1008058197141106699/1011749023989911612/Wach_kayn.mp3',
   zamel: 'https://cdn.discordapp.com/attachments/849299865157632098/891398001510219777/namir.mp3',
   da7kek: 'https://cdn.discordapp.com/attachments/596120108334579728/1010961830019076196/namir_da7kek.mp3',
