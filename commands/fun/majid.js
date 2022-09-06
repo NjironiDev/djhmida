@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 
-const voices = {
+export const majidVoices = {
   dik_terma: 'https://cdn.discordapp.com/attachments/596120108334579728/1012813871267991632/Dik_Terma.mp3',
   hak_a_said: 'https://cdn.discordapp.com/attachments/596120108334579728/1012813872266231888/Hak_a_Said.mp3',
   hak_chwa: 'https://cdn.discordapp.com/attachments/596120108334579728/1012813872635326504/Hak_Chwa.mp3',
@@ -25,16 +25,17 @@ module.exports = class MajidCommand extends Commando.Command {
 
     if (!voice.channelID) return message.reply('You must be in a voice channel 🙊');
 
-    if (!args) return message.reply(`Please supply an option \`${Object.keys(voices).join('|')}\``);
+    if (!args) return message.reply(`Please supply an option \`${Object.keys(majidVoices).join('|')}\``);
 
     const [option] = args.split(' ');
 
-    if (!Object.keys(voices).includes(option)) return message.reply(`Option does not exist, use the given options \`${Object.keys(voices).join('|')}\``);
+    if (!Object.keys(majidVoices).includes(option))
+      return message.reply(`Option does not exist, use the given options \`${Object.keys(majidVoices).join('|')}\``);
 
     try {
       const connection = await voice.channel.join();
 
-      connection.play(voices[option]);
+      connection.play(majidVoices[option]);
     } catch (error) {
       console.log(error);
       voice.channel.leave();

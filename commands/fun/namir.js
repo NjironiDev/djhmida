@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 
-const voices = {
+export const namirVoices = {
   wach_kayn: 'https://cdn.discordapp.com/attachments/1008058197141106699/1011749023989911612/Wach_kayn.mp3',
   zamel: 'https://cdn.discordapp.com/attachments/849299865157632098/891398001510219777/namir.mp3',
   da7kek: 'https://cdn.discordapp.com/attachments/596120108334579728/1010961830019076196/namir_da7kek.mp3',
@@ -26,16 +26,17 @@ module.exports = class NamirCommand extends Commando.Command {
 
     if (!voice.channelID) return message.reply('You must be in a voice channel 🙊');
 
-    if (!args) return message.reply(`Please supply an option \`${Object.keys(voices).join('|')}\``);
+    if (!args) return message.reply(`Please supply an option \`${Object.keys(namirVoices).join('|')}\``);
 
     const [option] = args.split(' ');
 
-    if (!Object.keys(voices).includes(option)) return message.reply(`Option does not exist, use the given options \`${Object.keys(voices).join('|')}\``);
+    if (!Object.keys(namirVoices).includes(option))
+      return message.reply(`Option does not exist, use the given options \`${Object.keys(namirVoices).join('|')}\``);
 
     try {
       const connection = await voice.channel.join();
 
-      connection.play(voices[option]);
+      connection.play(namirVoices[option]);
     } catch (error) {
       console.log(error);
       voice.channel.leave();

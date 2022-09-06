@@ -1,5 +1,7 @@
 const Commando = require('discord.js-commando');
 const Discord = require('discord.js');
+const { majidVoices } = require('../fun/majid');
+const { namirVoices } = require('../fun/namir');
 
 module.exports = class HelpCommand extends Commando.Command {
   constructor(client) {
@@ -41,11 +43,15 @@ module.exports = class HelpCommand extends Commando.Command {
         },
         {
           name: `djnamir 🐅 <option>`,
-          value: 'Choose one of these options and hear 👂🏻 zamel|da7kek|rak3yan|aller|li_ma3na|salam|wooo.',
+          value: `Choose one of these options and hear 👂🏻 ${Object.keys(namirVoices).join('|')}`,
         },
         {
           name: `djmajid ⚽ <option>`,
-          value: 'Choose one of these options and hear 👂🏻 dik_terma|ana_ghadi|mabaghinch_tmcho|hak_a_said|hak_chwa|ay_dahri|bezi|ara_passi|l3eb_m3ana.',
+          value: `Choose one of these options and hear 👂🏻 ${Object.keys(majidVoices).join('|')}`,
+        },
+        {
+          name: `djkaboom 🧟🏻‍♂️`,
+          value: `Kaboom!`,
         },
       )
       .setFooter('Keep vibing 🎶🎵');
