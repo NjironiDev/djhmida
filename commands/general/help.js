@@ -69,8 +69,12 @@ module.exports = class HelpCommand extends Commando.Command {
           value: `Choose one of these options and hear 👂🏻 ${Object.keys(majidVoices).join('|')}`,
         },
         {
-          name: `djkaboom 🧟🏻‍♂️`,
+          name: `djkaboom 👹`,
           value: `Kaboom!`,
+        },
+        {
+          name: `djyo 👨🏿‍🦲`,
+          value: `Ayoow!`,
         },
       )
       .setFooter('Keep vibing 🎶🎵');
