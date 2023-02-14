@@ -16,24 +16,24 @@ module.exports = class AnimeCommand extends Commando.Command {
     try {
       if (!args.length) return message.channel.send('Please specify an anime 🙊.`djanime <anime_name>`');
 
-      const { data } = await axios.get(`https://api.jikan.moe/v3/search/anime?q=${args}`);
+      const { data: result } = await axios.get(`https://api.jikan.moe/v4/anime?q=${args}`);
 
-      const anime = data.results[0];
+      const anime = result.data.filter(anime => anime.type === 'TV')[0];
       if (!anime) return message.channel.send("Sorry, I couldn't find that anime 🙊");
 
-      const score = [...Array(Math.floor(anime.score)).keys()].map(() => '⭐').join(' ');
+      const score = anime.score ?? 'N/A';
       const airing = anime.airing ? 'Yes' : 'No';
-      const start_date = new Date(anime.start_date).toLocaleDateString();
+      const start_date = new Date(anime.aired.from).toLocaleDateString();
 
       const embed = new Discord.MessageEmbed()
         .setTitle(anime.title)
         .setURL(anime.url)
-        .setDescription(anime.synopsis)
-        .setImage(anime.image_url)
+        .setDescription(anime.synopsis ?? '')
+        .setImage(anime.images.jpg.large_image_url)
         .addFields(
-          { name: 'Score', value: score, inline: true },
-          { name: 'Airing', value: airing, inline: true },
-          { name: 'Release Date', value: start_date, inline: true },
+          { name: 'Score ⭐', value: score, inline: true },
+          { name: 'Airing 📺', value: airing, inline: true },
+          { name: 'Release Date 📅', value: start_date, inline: true },
         );
 
       message.embed(embed);

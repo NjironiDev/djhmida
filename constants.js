@@ -7,7 +7,7 @@ const BOT_ID = process.env.BOT_ID;
 const BOT_TOKEN = process.env.BOT_TOKEN;
 const OWNER_ID = process.env.OWNER_ID;
 const FACES_API_KEY = process.env.FACES_API_KEY;
-const RAPID_API_KEY = process.env.RAPID_API_KEY;
+const URBAN_API_KEY = process.env.URBAN_API_KEY;
 const MAJID_VOICES = {
   dik_terma: 'https://cdn.discordapp.com/attachments/596120108334579728/1012813871267991632/Dik_Terma.mp3',
   hak_a_said: 'https://cdn.discordapp.com/attachments/596120108334579728/1012813872266231888/Hak_a_Said.mp3',
@@ -36,7 +36,7 @@ module.exports = {
   BOT_INVITE_LINK,
   OWNER_ID,
   FACES_API_KEY,
-  RAPID_API_KEY,
+  RAPID_API_KEY: URBAN_API_KEY,
   MAJID_VOICES,
   NAMIR_VOICES,
 };
