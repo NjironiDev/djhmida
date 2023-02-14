@@ -24,7 +24,7 @@ module.exports = class WeatherCommand extends Commando.Command {
 
       const embed = new Discord.MessageEmbed()
         .setColor('RANDOM')
-        .setTitle(capitalizeFirstLetter(args))
+        .setTitle(`Weather in ${capitalizeFirstLetter(args)} 🌡`)
         .addFields(
           {
             name: 'Temperature',

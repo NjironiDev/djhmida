@@ -1,18 +1,18 @@
 const Commando = require('discord.js-commando');
 
-const audio = 'https://cdn.discordapp.com/attachments/1005814495987388459/1016728369729122326/C.O.D._Black_Ops-Zombies-_Kaboom__sound.mp3';
+const audio = 'https://cdn.discordapp.com/attachments/1075030694327242832/1075030735074889831/ghadi_tsdmo.mp3';
 
-module.exports = class KaboomCommand extends Commando.Command {
+module.exports = class TsdmoCommand extends Commando.Command {
   constructor(client) {
     super(client, {
-      name: 'kaboom',
+      name: 'tsdmo',
       group: 'fun',
-      memberName: 'kaboom',
-      description: 'Kaboom',
+      memberName: 'tsdmo',
+      description: 'tsdmo',
     });
   }
 
-  async run(message, args) {
+  async run(message) {
     const { voice } = message.member;
 
     if (!voice.channelID) return message.reply('You must be in a voice channel 🙊');

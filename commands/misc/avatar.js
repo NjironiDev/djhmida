@@ -12,7 +12,7 @@ module.exports = class AvatarCommand extends Commando.Command {
 
   async run(message) {
     message.reply({
-      files: [message.author.displayAvatarURL({ format: 'png' })],
+      files: [message.author.displayAvatarURL({ format: 'png', size: 4096 })],
     });
   }
 };
