@@ -5,8 +5,8 @@ const { OWNER_ID, BOT_TOKEN, PREFIX, BOT_INVITE_LINK } = require('./constants');
 
 const client = new Commando.CommandoClient({ owner: OWNER_ID, commandPrefix: PREFIX, invite: BOT_INVITE_LINK });
 
-client.on('ready', () => {
-  try {
+try {
+  client.on('ready', () => {
     client.registry
       .registerDefaultGroups()
       .registerDefaultTypes()
@@ -17,9 +17,9 @@ client.on('ready', () => {
       ])
       .registerCommandsIn(path.join(__dirname, 'commands'));
     console.log('DJ Hmida is ready!');
-  } catch (error) {
-    console.error(error.message);
-  }
-});
+  });
 
-client.login(BOT_TOKEN);
+  client.login(BOT_TOKEN);
+} catch (error) {
+  console.error(error.message);
+}
