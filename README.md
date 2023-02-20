@@ -1,6 +1,6 @@
 # DJ Hmida 🎶🤖
 
-### DJ Hmida is a discord bot made by me for fun 🎉
+### DJ Hmida is a discord bot made for fun 🎉
 
 ---
 
