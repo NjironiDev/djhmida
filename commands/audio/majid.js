@@ -14,7 +14,7 @@ module.exports = class MajidCommand extends Commando.Command {
   constructor(client) {
     super(client, {
       name: 'majid',
-      group: 'fun',
+      group: 'audio',
       memberName: 'majid',
       description: 'Match f derb quotes',
     });

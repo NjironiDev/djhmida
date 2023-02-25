@@ -6,7 +6,7 @@ module.exports = class MimimiCommand extends Commando.Command {
   constructor(client) {
     super(client, {
       name: 'mimimi',
-      group: 'fun',
+      group: 'audio',
       memberName: 'mimimi',
       description: 'mimimi',
     });

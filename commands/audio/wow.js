@@ -1,14 +1,14 @@
 const Commando = require('discord.js-commando');
 
-const audio = 'https://cdn.discordapp.com/attachments/1075030694327242832/1078376002570424411/hadari.mp3';
+const audio = 'https://cdn.discordapp.com/attachments/1075030694327242832/1075120855929069648/Woooooow.mp3';
 
-module.exports = class HadariCommand extends Commando.Command {
+module.exports = class WowCommand extends Commando.Command {
   constructor(client) {
     super(client, {
-      name: 'hadari',
-      group: 'fun',
-      memberName: 'hadari',
-      description: 'hadari',
+      name: 'wow',
+      group: 'audio',
+      memberName: 'wow',
+      description: 'wow',
     });
   }
 

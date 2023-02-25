@@ -15,7 +15,7 @@ module.exports = class NamirCommand extends Commando.Command {
   constructor(client) {
     super(client, {
       name: 'namir',
-      group: 'fun',
+      group: 'audio',
       memberName: 'namir',
       description: 'Aswat mamir mo9ana3',
     });

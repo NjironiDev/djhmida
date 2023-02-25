@@ -1,14 +1,14 @@
 const Commando = require('discord.js-commando');
 
-const audio = 'https://cdn.discordapp.com/attachments/1075030694327242832/1075030735074889831/ghadi_tsdmo.mp3';
+const audio = 'https://cdn.discordapp.com/attachments/1075030694327242832/1079091122925735936/Tom_and_Jerry_aha.mp3';
 
-module.exports = class TsdmoCommand extends Commando.Command {
+module.exports = class AhaCommand extends Commando.Command {
   constructor(client) {
     super(client, {
-      name: 'tsdmo',
-      group: 'fun',
-      memberName: 'tsdmo',
-      description: 'tsdmo',
+      name: 'aha',
+      group: 'audio',
+      memberName: 'aha',
+      description: 'aha',
     });
   }
 

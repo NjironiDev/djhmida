@@ -55,6 +55,7 @@ module.exports = class HelpCommand extends Commando.Command {
         { name: `djsamba 😹`, value: `Tom and Jerry Samba`, inline: true },
         { name: `djmimimi 🛌🏻`, value: `Mimimimi 😴`, inline: true },
         { name: `djhadari 😲`, value: `Hadari hadari papapa 😲`, inline: true },
+        { name: `djaha 😼`, value: `Tom says ahaa 😼`, inline: true },
       )
       .setFooter('Keep vibing 🎶🎵');
 

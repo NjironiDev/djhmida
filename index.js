@@ -13,6 +13,7 @@ try {
       .registerGroups([
         ['general', 'General'],
         ['fun', 'Fun'],
+        ['audio', 'Audio'],
         ['misc', 'Misc'],
       ])
       .registerCommandsIn(path.join(__dirname, 'commands'));
